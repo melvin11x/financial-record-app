@@ -1,0 +1,72 @@
+section {
+    padding: 0 15px;
+}
+
+.welcome-section, .form-section {
+    height: 100vh;
+    position: relative;
+}
+
+.welcome-section {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+.welcome-section > div {
+    width: 80%;
+}
+
+.welcome-section h1 {
+    font-size: 30px;
+}
+
+.welcome-section p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.form-section {
+    background-color: rgb(240, 240, 240);
+}
+
+.form {
+    width: 50%;
+    margin: auto;
+}
+
+.form h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.form > div {
+    margin-top: 20px;
+}
+
+.form input {
+    padding: 10px 30px;
+    padding-left: 40px;
+}
+
+.form .input-container {
+    position: relative;
+}
+
+.form i {
+    position: absolute;
+    top: 50%;
+    left: 21px;
+    transform: translate(-50%, -50%);
+    color: #ccc;
+}
+
+.form button.btn {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 30%;
+    padding: 11.5px 35px;
+}

@@ -1,0 +1,52 @@
+.list li {
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #ccc;
+    display: block;
+    width: 80%;
+    background-color: white;
+}
+
+.list li:nth-child(even) {
+    background-color: rgba(38, 166, 123, .25);
+}
+
+.list li:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+.list p:first-of-type {
+    margin-bottom: 5px;
+}
+
+.action-container {
+    text-align: right;
+}
+
+.detail {
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 3px #ccc;
+    padding: 15px 20px;
+}
+
+.detail td:first-child {
+    width: 150px;
+}
+
+.detail td:nth-child(2) {
+    width: 5px;
+}
+
+.detail td:not(:last-child) {
+    font-weight: bold;
+}
+
+.detail td {
+    padding: 3px 5px;
+}
+
+.detail tr:nth-last-child(2) td {
+    padding-top: 30px;
+}

@@ -1,0 +1,239 @@
+:root {
+    /*--primary-color: rgb(33, 105, 104);*/
+    --primary-color: rgb(38, 166, 123);
+    --secondary-color: #aaa;
+    --black-color: rgb(50, 50, 50);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /*font-weight: normal;*/
+}
+
+h1, h2, h3, h4, h5, h6, ul, p {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:focus, input:focus, select:focus, textarea:focus {
+    outline: none;
+}
+
+/* Template class */
+
+.align-items-center {
+    align-items: center;
+}
+
+.alert {
+    padding: 10px 20px;
+    border: 4px solid;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+.alert-success {
+    color: rgb(60, 160, 30);
+    border-color: rgb(60, 160, 30);
+    background-color: rgb(220, 240, 220);
+}
+
+.alert-error {
+    color: rgb(210, 100, 100);
+    border-color: rgb(210, 100, 100);
+    background-color: rgb(240, 220, 220);
+}
+
+.text-error {
+    color: rgb(220, 80, 75);
+    margin-top: 5px;
+    font-size: 13.5px;
+}
+
+.mt-1 {
+    margin-top: 0.25rem;
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+.mb-4 {
+    margin-bottom: 1.5em;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 10px 25px;
+    border-radius: 100px;
+    border: 1px solid;
+    transition-duration: .4s;
+    transition-property: background-color, color;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.btn-primary-reverse {
+    background-color: var(--primary-color);
+    border-color: white;
+    color: white;
+}
+
+.btn-primary-reverse:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.btn-link {
+    color: var(--black-color);
+    border-color: var(--black-color);
+    margin-left: 5px;
+}
+
+.btn-link:hover {
+    background-color: var(--black-color);
+    color: white;
+}
+
+.absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-right {
+    text-align: right;
+}
+
+.not-available {
+    background-color: rgb(230, 230, 230);
+    color: rgb(50, 50, 50);
+    text-align: center;
+    border-radius: 7px;
+    padding: 15px 30px;
+    font-size: 30px;
+}
+
+/* Table */
+
+.table {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 3px #ccc;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table thead td {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 17px;
+}
+
+.table tbody tr:nth-child(odd) td {
+    background-color: rgb(230, 230, 230);
+}
+
+.table td {
+    flex: 1;
+    padding: 7px 15px;
+}
+
+.action-container form {
+    display: inline-block;
+}
+
+.action-container .btn-action {
+    border: 1px solid;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition-duration: .4s;
+    transition-property: background-color, color;
+}
+
+.action-container .btn-info {
+    border-color: rgb(50, 150, 255);
+    background-color: rgb(50, 150, 255);
+    color: white;
+}
+
+.action-container .btn-info:hover {
+    background-color: white;
+    color: rgb(50, 150, 255);
+}
+
+.action-container .btn-edit {
+    border-color: rgb(240, 220, 60);
+    background-color: rgb(240, 220, 60);
+    color: rgb(50, 50, 50);
+}
+
+.action-container .btn-edit:hover {
+    background-color: white;
+}
+
+.action-container .btn-delete {
+    border-color: rgb(250, 100, 100);
+    background-color: rgb(250, 100, 100);
+    color: white;
+}
+
+.action-container .btn-delete:hover {
+    background-color: white;
+    color: rgb(250, 100, 100);
+}
+
+/* Form */
+
+.form {
+    width: 100%;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form input, .form select, .form textarea {
+    display: block;
+    width: 100%;
+    padding: 7px 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form .row {
+    align-items: center;
+    margin-top: 15px;
+}
+
+.form .is-invalid {
+    border-color: rgb(220, 80, 75);
+}

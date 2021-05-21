@@ -1,0 +1,124 @@
+section {
+    display: flex;
+}
+
+.top {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+}
+
+.top > div {
+    width: 100%;
+}
+
+/* Sidebar */
+
+.sidebar {
+    width: 250px;
+    background-color: var(--black-color);
+    color: white;
+    align-self: flex-start;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    z-index: 3;
+}
+
+.sidebar img {
+    height: 50px;
+    display: block;
+}
+
+.sidebar .menu {
+    padding-right: 0;
+}
+
+.sidebar ul {
+    margin-top: 20px;
+}
+
+.sidebar a {
+    color: rgb(210, 210, 210);
+    display: block;
+    padding: 10px 2px;
+    padding-right: 15px;
+    transition-duration: .4s;
+    transition-property: color;
+}
+
+.sidebar a span {
+    margin-left: 5px;
+}
+
+.sidebar a:hover {
+    color: white;
+}
+
+.sidebar a.active {
+    color: var(--primary-color);
+    background-color: white;
+    padding-left: 15px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+/* Content Container */
+
+.content-container {
+    flex: 1;
+    background-color: rgb(245,245,245);
+}
+
+.content-container .top {
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 2px 10px rgb(150, 150, 150);
+}
+
+.content-container .admin-icon {
+    font-size: 40px;
+}
+
+.content-container .account {
+    display: flex;
+    align-items: center;
+}
+
+.content-container .account .user {
+    text-align: right;
+    flex: 1;
+}
+
+.content-container .account .user .name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content-container .account .logout {
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+.content-container .account .logout a {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition-duration: .4s;
+    transition-property: background-color;
+}
+
+.content-container .account .logout a:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.content-container .title {
+    padding: 20px 0;
+}
+
+.content-container .content{
+    padding-bottom: 25px;
+}
