@@ -30,7 +30,7 @@ Route::middleware('jwt.auth')->name('page.')->group(function () {
     });
 
     Route::middleware('admin.auth')->group(function () {
-//        Route::get('dashboard', 'AdminController@dashboard')->name('admin.dashboard');
+        Route::get('admin-dashboard', 'AdminController@dashboard')->name('admin.dashboard');
 
         Route::resource('categories', 'CategoryController')->only(['index', 'create', 'edit']);
         Route::resource('types', 'TypeController')->only(['index', 'create', 'edit']);

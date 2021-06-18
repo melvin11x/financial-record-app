@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\History;
-use App\Models\Token;
 use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -22,7 +21,7 @@ class UserController extends Controller
         $startDate = Carbon::now()->startOfMonth();
         $endDate = Carbon::now()->endOfMonth();
 
-        $histories = History::whereBetween('date', [$startDate, $endDate])->orderBy('date')->get();
+        $histories = History::where('user_id', getUser()->id)->whereBetween('date', [$startDate, $endDate])->orderBy('date')->get();
 
         $report = app()->make('stdClass');
 

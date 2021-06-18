@@ -20,7 +20,6 @@ class CreateUsersTable extends Migration
             $table->string('password', 255);
             $table->enum('role', ['user', 'admin'])->default('user');
             $table->integer('income')->default(0);
-//            $table->string('currency');
             $table->timestamps();
         });
     }
